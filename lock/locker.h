@@ -27,13 +27,13 @@ public:
     }
     //有参构造函数,初始化信号量的初始值为num
     sem(int num){
-        if(sem_init(m_sem, 0, num) != 0){
+        if(sem_init(&m_sem, 0, num) != 0){
             throw std::exception();
         }
     }
 
     ~sem(){
-        sem_destroy(m_sem);
+        sem_destroy(&m_sem);
     }
 
 //    sem_wait 是一个阻塞的函数，测试所指定信号量的值，它的操作是原子的。
@@ -77,7 +77,7 @@ public:
         return pthread_mutex_unlock(&m_mutex) == 0;
     }
 
-    pthread* get(){
+    pthread_mutex_t * get(){
         return (&m_mutex);
     }
 
@@ -106,7 +106,7 @@ public:
         pthread_cond_destroy(&m_cond);
     }
     bool wait(pthread_mutex_t* m_mutex){
-        return pthread_cond_wait(m_cond, m_mutex) == 0;
+        return pthread_cond_wait(&m_cond, m_mutex) == 0;
     }
     bool broadcast(){
         return pthread_cond_broadcast(&m_cond) == 0;
