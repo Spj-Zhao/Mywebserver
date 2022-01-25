@@ -6,9 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/home/john/Desktop/Mywebserver/lock/locker.h
+exception
+-
+pthread.h
+-
+semaphore.h
+-
+
+/home/john/Desktop/Mywebserver/log/block_queue.h
+stdlib.h
+-
+../lock/locker.h
+/home/john/Desktop/Mywebserver/lock/locker.h
+
 /home/john/Desktop/Mywebserver/log/log.cpp
 log.h
 /home/john/Desktop/Mywebserver/log/log.h
 
 /home/john/Desktop/Mywebserver/log/log.h
+cstdio
+-
+string
+-
+block_queue.h
+/home/john/Desktop/Mywebserver/log/block_queue.h
 

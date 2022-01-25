@@ -111,7 +111,7 @@ public:
         //m_cond.wait一直堵塞自己不返回,当pthread_cond_signal()或者是pthread_cond_broadcast()函数唤醒
         //线程竞争到锁是返回1,因为不可能永远能竞争到锁,所以当被唤醒的时候会返回非0的值
         while(m_size <= 0){
-            if(!m_cond.wait(&m_mutex)){
+            if(!m_cond.wait(m_mutex.get())){
                 m_mutex.unlock();
                 return false;
             }
@@ -125,7 +125,7 @@ public:
     }
 
 private:
-    locker m_mutex;
+    locker m_mutex;     //locker类实例
     cond m_cond;
 
     T* m_array;
