@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/lib/x86_64-linux-gnu
 
-CXX_FLAGS = -g -std=gnu++14
+CXX_FLAGS = -pthread -g -std=gnu++14
 

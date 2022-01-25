@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Mywebserver.dir/log/log.cpp.o"
   "CMakeFiles/Mywebserver.dir/main.cpp.o"
   "CMakeFiles/Mywebserver.dir/mysqlpool/sql_connection_pool.cpp.o"
   "Mywebserver"

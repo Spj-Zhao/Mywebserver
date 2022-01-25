@@ -6,27 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/john/Desktop/Mywebserver/lock/locker.h
-exception
--
-pthread.h
--
-semaphore.h
--
+/home/john/Desktop/Mywebserver/log/log.cpp
+log.h
+/home/john/Desktop/Mywebserver/log/log.h
 
-/home/john/Desktop/Mywebserver/mysqlpool/sql_connection_pool.cpp
-mysql/mysql.h
--
-sql_connection_pool.h
-/home/john/Desktop/Mywebserver/mysqlpool/sql_connection_pool.h
-
-/home/john/Desktop/Mywebserver/mysqlpool/sql_connection_pool.h
-mysql/mysql.h
--
-string
--
-list
--
-../lock/locker.h
-/home/john/Desktop/Mywebserver/lock/locker.h
+/home/john/Desktop/Mywebserver/log/log.h
 

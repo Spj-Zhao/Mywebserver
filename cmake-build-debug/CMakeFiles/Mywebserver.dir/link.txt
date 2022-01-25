@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/Mywebserver.dir/main.cpp.o CMakeFiles/Mywebserver.dir/mysqlpool/sql_connection_pool.cpp.o -o Mywebserver 
+/usr/bin/c++ -pthread -g CMakeFiles/Mywebserver.dir/main.cpp.o CMakeFiles/Mywebserver.dir/mysqlpool/sql_connection_pool.cpp.o CMakeFiles/Mywebserver.dir/log/log.cpp.o -o Mywebserver  -lmysqlclient 
