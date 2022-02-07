@@ -21,6 +21,12 @@ stdlib.h
 /home/john/Desktop/Mywebserver/lock/locker.h
 
 /home/john/Desktop/Mywebserver/log/log.cpp
+cstring
+-
+sys/time.h
+-
+stdarg.h
+-
 log.h
 /home/john/Desktop/Mywebserver/log/log.h
 
