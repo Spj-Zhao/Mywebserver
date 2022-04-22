@@ -129,6 +129,54 @@ Mywebserver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/build
 .PHONY : Mywebserver/fast
 
+config.o: config.cpp.o
+.PHONY : config.o
+
+# target to build an object file
+config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/config.cpp.o
+.PHONY : config.cpp.o
+
+config.i: config.cpp.i
+.PHONY : config.i
+
+# target to preprocess a source file
+config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/config.cpp.i
+.PHONY : config.cpp.i
+
+config.s: config.cpp.s
+.PHONY : config.s
+
+# target to generate assembly for a file
+config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/config.cpp.s
+.PHONY : config.cpp.s
+
+http/http_conn.o: http/http_conn.cpp.o
+.PHONY : http/http_conn.o
+
+# target to build an object file
+http/http_conn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/http/http_conn.cpp.o
+.PHONY : http/http_conn.cpp.o
+
+http/http_conn.i: http/http_conn.cpp.i
+.PHONY : http/http_conn.i
+
+# target to preprocess a source file
+http/http_conn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/http/http_conn.cpp.i
+.PHONY : http/http_conn.cpp.i
+
+http/http_conn.s: http/http_conn.cpp.s
+.PHONY : http/http_conn.s
+
+# target to generate assembly for a file
+http/http_conn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/http/http_conn.cpp.s
+.PHONY : http/http_conn.cpp.s
+
 log/log.o: log/log.cpp.o
 .PHONY : log/log.o
 
@@ -201,6 +249,54 @@ mysqlpool/sql_connection_pool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/mysqlpool/sql_connection_pool.cpp.s
 .PHONY : mysqlpool/sql_connection_pool.cpp.s
 
+timer/lst_timer.o: timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.o
+
+# target to build an object file
+timer/lst_timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.cpp.o
+
+timer/lst_timer.i: timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.i
+
+# target to preprocess a source file
+timer/lst_timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.cpp.i
+
+timer/lst_timer.s: timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.s
+
+# target to generate assembly for a file
+timer/lst_timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.cpp.s
+
+webserver.o: webserver.cpp.o
+.PHONY : webserver.o
+
+# target to build an object file
+webserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/webserver.cpp.o
+.PHONY : webserver.cpp.o
+
+webserver.i: webserver.cpp.i
+.PHONY : webserver.i
+
+# target to preprocess a source file
+webserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/webserver.cpp.i
+.PHONY : webserver.cpp.i
+
+webserver.s: webserver.cpp.s
+.PHONY : webserver.s
+
+# target to generate assembly for a file
+webserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/webserver.cpp.s
+.PHONY : webserver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,6 +306,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Mywebserver"
+	@echo "... config.o"
+	@echo "... config.i"
+	@echo "... config.s"
+	@echo "... http/http_conn.o"
+	@echo "... http/http_conn.i"
+	@echo "... http/http_conn.s"
 	@echo "... log/log.o"
 	@echo "... log/log.i"
 	@echo "... log/log.s"
@@ -219,6 +321,12 @@ help:
 	@echo "... mysqlpool/sql_connection_pool.o"
 	@echo "... mysqlpool/sql_connection_pool.i"
 	@echo "... mysqlpool/sql_connection_pool.s"
+	@echo "... timer/lst_timer.o"
+	@echo "... timer/lst_timer.i"
+	@echo "... timer/lst_timer.s"
+	@echo "... webserver.o"
+	@echo "... webserver.i"
+	@echo "... webserver.s"
 .PHONY : help
 
 

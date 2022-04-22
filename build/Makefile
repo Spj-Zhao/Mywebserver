@@ -123,6 +123,33 @@ Mywebserver/fast:
 	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/build
 .PHONY : Mywebserver/fast
 
+http/http_conn.o: http/http_conn.cpp.o
+
+.PHONY : http/http_conn.o
+
+# target to build an object file
+http/http_conn.cpp.o:
+	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/http/http_conn.cpp.o
+.PHONY : http/http_conn.cpp.o
+
+http/http_conn.i: http/http_conn.cpp.i
+
+.PHONY : http/http_conn.i
+
+# target to preprocess a source file
+http/http_conn.cpp.i:
+	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/http/http_conn.cpp.i
+.PHONY : http/http_conn.cpp.i
+
+http/http_conn.s: http/http_conn.cpp.s
+
+.PHONY : http/http_conn.s
+
+# target to generate assembly for a file
+http/http_conn.cpp.s:
+	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/http/http_conn.cpp.s
+.PHONY : http/http_conn.cpp.s
+
 log/log.o: log/log.cpp.o
 
 .PHONY : log/log.o
@@ -204,6 +231,33 @@ mysqlpool/sql_connection_pool.cpp.s:
 	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/mysqlpool/sql_connection_pool.cpp.s
 .PHONY : mysqlpool/sql_connection_pool.cpp.s
 
+timer/lst_timer.o: timer/lst_timer.cpp.o
+
+.PHONY : timer/lst_timer.o
+
+# target to build an object file
+timer/lst_timer.cpp.o:
+	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.cpp.o
+
+timer/lst_timer.i: timer/lst_timer.cpp.i
+
+.PHONY : timer/lst_timer.i
+
+# target to preprocess a source file
+timer/lst_timer.cpp.i:
+	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.cpp.i
+
+timer/lst_timer.s: timer/lst_timer.cpp.s
+
+.PHONY : timer/lst_timer.s
+
+# target to generate assembly for a file
+timer/lst_timer.cpp.s:
+	$(MAKE) -f CMakeFiles/Mywebserver.dir/build.make CMakeFiles/Mywebserver.dir/timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Mywebserver"
+	@echo "... http/http_conn.o"
+	@echo "... http/http_conn.i"
+	@echo "... http/http_conn.s"
 	@echo "... log/log.o"
 	@echo "... log/log.i"
 	@echo "... log/log.s"
@@ -222,6 +279,9 @@ help:
 	@echo "... mysqlpool/sql_connection_pool.o"
 	@echo "... mysqlpool/sql_connection_pool.i"
 	@echo "... mysqlpool/sql_connection_pool.s"
+	@echo "... timer/lst_timer.o"
+	@echo "... timer/lst_timer.i"
+	@echo "... timer/lst_timer.s"
 .PHONY : help
 
 

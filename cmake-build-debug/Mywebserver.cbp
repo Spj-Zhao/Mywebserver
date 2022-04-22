@@ -84,6 +84,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/john/Desktop/Mywebserver/config.cpp">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/config.h">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/http/http_conn.cpp">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/http/http_conn.h">
+			<Option target="Mywebserver"/>
+		</Unit>
 		<Unit filename="/home/john/Desktop/Mywebserver/lock/locker.h">
 			<Option target="Mywebserver"/>
 		</Unit>
@@ -106,6 +118,18 @@
 			<Option target="Mywebserver"/>
 		</Unit>
 		<Unit filename="/home/john/Desktop/Mywebserver/threadpool/threadpool.h">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/timer/lst_timer.cpp">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/timer/lst_timer.h">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/webserver.cpp">
+			<Option target="Mywebserver"/>
+		</Unit>
+		<Unit filename="/home/john/Desktop/Mywebserver/webserver.h">
 			<Option target="Mywebserver"/>
 		</Unit>
 		<Unit filename="/home/john/Desktop/Mywebserver/CMakeLists.txt">

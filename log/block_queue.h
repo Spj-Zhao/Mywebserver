@@ -40,6 +40,20 @@ public:
         m_mutex.unlock();
     }
 
+    //判断队列是否满了
+    bool full()
+    {
+        m_mutex.lock();
+        if (m_size >= m_max_size)
+        {
+
+            m_mutex.unlock();
+            return true;
+        }
+        m_mutex.unlock();
+        return false;
+    }
+
     bool empty(){
         m_mutex.lock();
         if(m_size == 0){
